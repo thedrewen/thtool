@@ -1,2 +1,2 @@
-# utool
-Utools is tool for chating and more.
+# thtool
+thtools is tool for chating and more.
