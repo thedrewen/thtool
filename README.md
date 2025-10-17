@@ -1,2 +1,2 @@
 # thtool
-thtools is tool for chating and more.
+Thtool will aim to create a chat in the terminal, play online games, and more.
