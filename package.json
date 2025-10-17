@@ -1,5 +1,5 @@
 {
-  "name": "utool",
+  "name": "thtool",
   "version": "0.0.1",
   "description": "Tool for chat and more",
   "main": "dist/index.js",
@@ -7,7 +7,9 @@
   "files": [
     "/dist"
   ],
-  "bin": "dist/index.js",
+  "bin": {
+    "utool": "dist/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,8 +22,8 @@
     "fun",
     "tool"
   ],
-  "author": "TheDreWen",
-  "license": "ISC",
+  "author": "thedrewen",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/thedrewen/utool/issues"
   },
