@@ -1,4 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const test_1 = require("./test");
-(0, test_1.test)();
+exports.test = void 0;
+var test_1 = require("./test");
+Object.defineProperty(exports, "test", { enumerable: true, get: function () { return test_1.test; } });
