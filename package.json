@@ -16,7 +16,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "update-alpha-patch": "npm version prepatch --preid=alpha",
-    "update-alpha-minor": "npm version minor --preid=alpha"
+    "update-alpha-minor": "npm version preminor --preid=alpha"
   },
   "repository": {
     "type": "git",
