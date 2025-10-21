@@ -4,6 +4,7 @@ import promptPassword from "password-prompt";
 import pc from 'picocolors';
 import fs from "fs";
 import { Config } from "../type";
+import path from 'path';
 
 const prompt = prtsync({sigint: true})
 
@@ -44,13 +45,18 @@ export async function setup() {
     console.log(pc.green('💾 Setup complete !'))
 }
 
-export function getConfig() : Config {
-    let rawdata = fs.readFileSync('./data/config.json');
+
+
+
+export function getConfig(): Config {
+    const configPath = path.join(__dirname, '../../data/config.json');
+    let rawdata = fs.readFileSync(configPath);
     let config = JSON.parse(rawdata.toString('utf-8'));
     return config;
 }
 
 export function saveConfig(config: Config) {
     config.last_update = new Date();
-    fs.writeFileSync('./data/config.json', JSON.stringify(config));
+    const configPath = path.join(__dirname, '../../data/config.json');
+    fs.writeFileSync(configPath, JSON.stringify(config));
 }
