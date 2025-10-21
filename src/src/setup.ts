@@ -45,9 +45,6 @@ export async function setup() {
     console.log(pc.green('💾 Setup complete !'))
 }
 
-
-
-
 export function getConfig(): Config {
     const configPath = path.join(__dirname, '../../data/config.json');
     let rawdata = fs.readFileSync(configPath);
