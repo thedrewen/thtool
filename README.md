@@ -15,4 +15,4 @@ npx thtool -s
 ```
 
 **NPM Link :**
-[thtool sur npm](https://www.npmjs.com/package/thtool?activeTab=versions)
+[ThTool NPM](https://www.npmjs.com/package/thtool?activeTab=versions)
