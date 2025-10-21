@@ -1,2 +1,18 @@
 # thtool
-Thtool will aim to create a chat in the terminal, play online games, and more.
+![NPM Downloads](https://img.shields.io/npm/dw/thtool)
+![NPM Version](https://img.shields.io/npm/v/thtool)
+
+## Get Started
+
+**Install :**
+```bash
+npm i thtool
+```
+
+**Setup :**
+```bash
+npx thtool -s
+```
+
+**NPM Link :**
+[thtool sur npm](https://www.npmjs.com/package/thtool?activeTab=versions)
