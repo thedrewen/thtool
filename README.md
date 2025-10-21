@@ -11,7 +11,7 @@ npm i thtool
 
 **Setup :**
 ```bash
-npx thtool -s
+npx thtool setup
 ```
 
 **NPM Link :**

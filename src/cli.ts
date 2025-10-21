@@ -1,24 +1,32 @@
 #!/usr/bin/env node
-
 import { test } from "./src/test";
 import { Command } from "commander";
 import figlet from "figlet";
-import {version} from '../package.json'
+import { version } from '../package.json';
 import { setup } from "./src/setup";
 
 console.clear();
 console.log(figlet.textSync('ThTool'));
 
-const program = new Command()
-    .version(version)
-    .option('-t, --test', 'Run test.')
-    .option('-s, --setup', 'Run setup.')
-    .parse(process.argv);
+const program = new Command();
 
-const options = program.opts();
+program
+    .name('thtool')
+    .description('ThTool CLI')
+    .version(version);
 
-if(options.test) {
-    test();
-}else if(options.setup) {
-    setup();
-}
+program
+    .command('test')
+    .description('Run test')
+    .action(() => {
+        test();
+    });
+
+program
+    .command('setup')
+    .description('Run setup')
+    .action(() => {
+        setup();
+    });
+
+program.parse(process.argv);
