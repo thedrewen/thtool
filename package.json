@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/thedrewen/utool.git"
+    "url": "https://github.com/thedrewen/thtool.git"
   },
   "keywords": [
     "chat",
@@ -31,9 +31,9 @@
   "author": "thedrewen",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/thedrewen/utool/issues"
+    "url": "https://github.com/thedrewen/thtool/issues"
   },
-  "homepage": "https://github.com/thedrewen/utool#readme",
+  "homepage": "https://github.com/thedrewen/thtool#readme",
   "dependencies": {
     "commander": "^14.0.1",
     "figlet": "^1.9.3",
