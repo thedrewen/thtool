@@ -12,14 +12,10 @@ export async function setup() {
     console.log(pc.green('👋 Welcome to ThTool Setup !\n'))
     const config : Config = getConfig();
 
-    const questions : {text: string, element: 'server_host' | 'server_port' | 'username' | 'password'}[] = [
+    const questions : {text: string, element: 'url' | 'username' | 'password'}[] = [
         {
-            text: '💻 Define server host',
-            element: 'server_host'
-        },
-        {
-            text: '💻 Define server port',
-            element: 'server_port'
+            text: '💻 Define server url',
+            element: 'url'
         },
         {
             text : "😺 Define your username",

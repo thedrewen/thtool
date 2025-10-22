@@ -4,6 +4,8 @@ import { Command } from "commander";
 import figlet from "figlet";
 import { version } from '../package.json';
 import { setup } from "./src/setup";
+import { ThServer } from "./src/server/server";
+import { ThClient } from "./src/client/client";
 
 console.clear();
 console.log(figlet.textSync('ThTool'));
@@ -19,7 +21,17 @@ program
     .command('test')
     .description('Run test')
     .action(() => {
-        test();
+        new ThClient()
+            .test();
+    });
+
+program
+    .command('server')
+    .description('Run server')
+    .option('-p, --port <value>', 'Server Port', '8080')
+    .action((options) => {
+        new ThServer(options.port)
+            .run();
     });
 
 program
