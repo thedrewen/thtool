@@ -14,5 +14,11 @@ npm i thtool
 npx thtool setup
 ```
 
+**Server :**
+```bash
+npx thtool server
+```
+* Use -p or --port to set the port. (The default value is 8080.)
+
 **NPM Link :**
 [ThTool NPM](https://www.npmjs.com/package/thtool?activeTab=versions)
