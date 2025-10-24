@@ -41,4 +41,12 @@ program
         setup();
     });
 
+program
+    .command('chat')
+    .description('Connect to server chat')
+    .action(() => {
+        new ThClient()
+            .connectToChat();
+    });
+
 program.parse(process.argv);
