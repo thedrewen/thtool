@@ -1,6 +1,6 @@
 {
   "name": "thtool",
-  "version": "0.4.0-alpha.0",
+  "version": "0.5.0-alpha.0",
   "description": "Tool for chat and more",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,7 +16,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "watch" : "tsc --watch",
+    "watch": "tsc --watch",
     "update-alpha-patch": "npm version prepatch --preid=alpha",
     "update-alpha-minor": "npm version preminor --preid=alpha"
   },
